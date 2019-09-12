@@ -97,14 +97,27 @@
 				width: 10%;
 			}
 			@media only screen and (max-width: 767px) {
-				.sheet-link {
+				.sheet-link, .sheet-link-car {
 					font-size: 12px;
+					padding: 6px !important;
 				}
-				.create-new-btn {
+				.create-new-btn, .update-btn {
 				    font-size: 12px;
-					padding: 10px;
+					padding: 6px;
 				}
 				tr:nth-child(11n-2), tr:nth-child(11n-3) {
+					font-size: 14px;
+				}
+				.last-entry {
+					margin-top: 5%;
+				}
+				.all-data p, .last-entry p {
+					font-size: 16px;
+				}
+				thead {
+					font-size: 14px;
+				}
+				th, td {
 					font-size: 14px;
 				}
 			}
@@ -197,7 +210,7 @@
 				<div class="create-new-btn" role="button"><a href="index.html">Create New</a></div>
 			</div>
 			<div class="create-new-btn-section">
-				<div class="update-btn" role="button">Update Entry</div>
+				<div class="update-btn" role="button">Update</div>
 			</div>
 				<a class="sheet-link" href="https://docs.google.com/spreadsheets/d/1lIKO_bHQ0W9Lls-SwjQhBCU0bGBLkP_azc3tOCTS_Io/edit#gid=0" role="button" target="_blank">View Spreadsheet</a>
 				<a class="sheet-link-car" href="car.html" role="button" target="_blank">Select Car</a>
