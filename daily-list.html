@@ -65,7 +65,7 @@
 				padding: 10px 20px;
 				width: 20%;
 				text-align: center;
-				margin-bottom: 10px;
+				/*margin-bottom: 10px;*/
 				display: inline-block;
 				float: right;
 				border-radius: 4px;
@@ -109,69 +109,86 @@
 				}
 			}
 			/*------------------------------------------------------*/
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-.hide {
-	display: none;
-}
-.form-popup {
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    border: 3px solid #735656;
-    z-index: 999;
-	background-color: #9c9292;
-}
-.form-container {
-    padding: 1%;
-}
-.label-section {
-    font-size: 18px;
-    font-weight: bold;
-}
-.dtl-input-section-vno input,
-.dtl-input-section-income input,
-.dtl-input-section-remark input,
-.dtl-input-section-expendature input {
-	margin-top:1%;
-}
-.close-icon{
-    position: absolute;
-    right: 3%;
-    top: 5%;
-	display: inline-block;
-    box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #948f8f;
-    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%, white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%, white 56%,transparent 56%, transparent 100%);
-    background-color: #948f8f;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
-    transition: all 0.3s ease;
-}
-.title{
-	display: inline-block;
-}
-.main-data,
-.calculation-secion{
-    display: none;
-}
-.alert{
-    display: none;
-}
+			.open-button {
+			  background-color: #555;
+			  color: white;
+			  padding: 16px 20px;
+			  border: none;
+			  cursor: pointer;
+			  opacity: 0.8;
+			  position: fixed;
+			  bottom: 23px;
+			  right: 28px;
+			  width: 280px;
+			}
+			.hide {
+				display: none;
+			}
+			.form-popup {
+				position: fixed;
+				top: 10%;
+				left: 10%;
+				width: 80%;
+				border: 3px solid #735656;
+				z-index: 999;
+				background-color: #9c9292;
+			}
+			.form-container {
+				padding: 1%;
+			}
+			.label-section {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.dtl-input-section-vno input,
+			.dtl-input-section-income input,
+			.dtl-input-section-remark input,
+			.dtl-input-section-expendature input {
+				margin-top:1%;
+			}
+			.close-icon{
+				position: absolute;
+				right: 3%;
+				top: 5%;
+				display: inline-block;
+				box-sizing: border-box;
+				width: 20px;
+				height: 20px;
+				border-width: 3px;
+				border-style: solid;
+				border-color: #948f8f;
+				background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%, white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%, white 56%,transparent 56%, transparent 100%);
+				background-color: #948f8f;
+				box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+				transition: all 0.3s ease;
+			}
+			.title{
+				display: inline-block;
+			}
+			.main-data,
+			.calculation-secion{
+				display: none;
+			}
+			.alert{
+				display: none;
+			}
+			.sheet-link-car {
+				border: 2px solid #9a9696;
+				background: #d0c7c7;
+				padding: 10px 20px;
+				width: 10%;
+				text-align: center;
+				/*margin-bottom: 10px;*/
+				display: inline-block;
+				float: right;
+				border-radius: 4px;
+				font-weight: bold;
+				font-family: sans-serif;
+				cursor: pointer;
+				color: #222;
+				text-decoration: none;
+				margin-right: 6px;
+			}
 		</style>
     </head>
     <body>
@@ -182,7 +199,8 @@
 			<div class="create-new-btn-section">
 				<div class="update-btn" role="button">Update Entry</div>
 			</div>
-            <a class="sheet-link" href="https://docs.google.com/spreadsheets/d/1lIKO_bHQ0W9Lls-SwjQhBCU0bGBLkP_azc3tOCTS_Io/edit#gid=0" role="button" target="_blank">View Spreadsheet</a>
+				<a class="sheet-link" href="https://docs.google.com/spreadsheets/d/1lIKO_bHQ0W9Lls-SwjQhBCU0bGBLkP_azc3tOCTS_Io/edit#gid=0" role="button" target="_blank">View Spreadsheet</a>
+				<a class="sheet-link-car" href="car.html" role="button" target="_blank">Select Car</a>
             <div class="last-entry">
 				<p>Last Entry</p>
 				<table id="testTable">
