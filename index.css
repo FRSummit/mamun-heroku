@@ -116,7 +116,8 @@ table, th, td {
 					width: 100%;
 				}
 				.total-section div {
-					display: block !important;
+					/*display: block !important;*/
+					width: 30% !important;
 				}
 			}
 			.detail-section {

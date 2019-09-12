@@ -96,32 +96,6 @@
 			tr th:nth-child(1){
 				width: 10%;
 			}
-			@media only screen and (max-width: 767px) {
-				.sheet-link, .sheet-link-car {
-					font-size: 12px;
-					padding: 6px !important;
-				}
-				.create-new-btn, .update-btn {
-				    font-size: 12px;
-					padding: 6px;
-				}
-				tr:nth-child(11n-2), tr:nth-child(11n-3) {
-					font-size: 14px;
-				}
-				.last-entry {
-					margin-top: 5%;
-				}
-				.all-data p, .last-entry p {
-					font-size: 16px;
-				}
-				thead {
-					font-size: 14px;
-				}
-				th, td {
-					font-size: 14px;
-				}
-			}
-			/*------------------------------------------------------*/
 			.open-button {
 			  background-color: #555;
 			  color: white;
@@ -202,6 +176,55 @@
 				text-decoration: none;
 				margin-right: 6px;
 			}
+			.title-para {
+				font-size: 26px;
+				text-align: center;
+				font-weight: bold;
+				margin: 0;
+			}
+			@media only screen and (max-width: 767px) {
+				.sheet-link, .sheet-link-car {
+					font-size: 12px;
+					padding: 6px !important;
+				}
+				.create-new-btn, .update-btn {
+				    font-size: 12px;
+					padding: 6px;
+				}
+				tr:nth-child(11n-2), tr:nth-child(11n-3) {
+					font-size: 14px;
+				}
+				.last-entry {
+					margin-top: 5%;
+				}
+				.all-data p, .last-entry p {
+					font-size: 16px;
+				}
+				thead, th, td {
+					font-size: 14px;
+				}
+				.form-popup {
+					top: 2%;
+				}
+				.title-para {
+					font-size: 18px;
+				}
+				.label-section {
+					font-size: 14px;
+				}
+				.close-icon {
+					right: 2%;
+					top: 1%;
+					width: 16px;
+					height: 16px;
+				}
+				/*.dtl-input-section-vno input, 
+				.dtl-input-section-income input, 
+				.dtl-input-section-remark input, 
+				.dtl-input-section-expendature input {
+					width: 40%;
+				}*/
+			}
 		</style>
     </head>
     <body>
@@ -258,13 +281,13 @@
 				<div class="detail-section" style="text-align: center;">
 					<a class="close-icon" href="#"></a>
 					<div class="title">
-						<p style="font-size: 26px; text-align: center; font-weight: bold; margin: 0;">Update</p>
+						<p class="title-para">Update</p>
 					</div>
 					<div style="text-align: center; margin-top: 1%;">
 						<div class="label-section" style="display: inline-block;">
 							<label>Date</label>
 						</div>
-						<div class="dtl-input-section-vno" style="display: inline-block;">
+						<div class="dtl-input-section-date" style="display: inline-block;">
 							<div><input class="date" type="date" name="date" id="date"/></div>
 						</div>
 						<div class="dtl-input-section-vno" style="display: inline-block;">

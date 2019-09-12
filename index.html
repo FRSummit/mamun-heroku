@@ -21,13 +21,22 @@
 				text-decoration: none;
 				color: #222;
 			}
+			@media only screen and (max-width: 767px) {
+				.link-page a {
+					font-size: 14px;
+					padding: 6px;
+				}
+				.title {
+					font-size: 20px !important;
+				}
+			}
 		</style>
     </head>
     <body>
         <div align="center">
             <div style="padding: 1%;">
 				<div style="display: inline-block;">
-					<p style="font-size: 30px; font-weight: bold; margin: 0;">Demo Car Project</p>
+					<p class="title" style="font-size: 30px; font-weight: bold; margin: 0;">Demo Car Project</p>
 				</div>
 				<div class="link-page">
 					<a href="car.html">Select Car</a>
@@ -96,7 +105,7 @@
 			
 			<div class="detail-section">
 				<div>
-					<p style="font-size: 30px; font-weight: bold; margin: 0;">Details</p>
+					<p class="title" style="font-size: 30px; font-weight: bold; margin: 0;">Details</p>
 				</div>
                 <div class="dtl-in-section-vno">
 					<div class="label-section">
