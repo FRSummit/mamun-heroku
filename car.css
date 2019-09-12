@@ -65,17 +65,23 @@ tr:nth-child(even){
 @media screen and (max-width: 650px) {
     .car-select {
         text-align: left;
+		width: 35%;
     }
     .vno {
         padding: 6px;
+		font-size: 12px;
     }
 	.car-select-btn {
 		padding: 6px 19px;
+		font-size: 12px;
+	}
+	.link-page a{
+		font-size: 12px !important;
 	}
 	.link-page a:nth-child(1) {
-		    padding: 6px;
+		padding: 6px;
 	}
 	.link-page a:nth-child(2) {
-		    padding: 6px 14px;
+		padding: 6px 14px;
 	}
 }
