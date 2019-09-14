@@ -154,6 +154,26 @@ $(document).ready(function(){
 		var dayParts = date.toString().split(" ");
 		console.log(date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear());
 	});
+	
+	$(".re-calculate").click(function(){
+		var calTotIn = ((parseInt($('#income1').val())) +
+					(parseInt($('#income2').val())) +
+					(parseInt($('#income3').val())) +
+					(parseInt($('#income4').val())) +
+					(parseInt($('#income5').val())) +
+					(parseInt($('#income6').val())) );
+		var calTotOut = ((parseInt($('#expendature1').val())) +
+					(parseInt($('#expendature2').val())) +
+					(parseInt($('#expendature3').val())) +
+					(parseInt($('#expendature4').val())) +
+					(parseInt($('#expendature5').val())) +
+					(parseInt($('#expendature6').val())) );
+		var netIn = calTotIn - calTotOut;
+		console.log(netIn);
+		$('#totalIncome').val(calTotIn);
+		$('#totalCost').val(calTotOut);
+		$('#netIncome').val(netIn);
+	});
 });
 			
 function insert_all_value() {
